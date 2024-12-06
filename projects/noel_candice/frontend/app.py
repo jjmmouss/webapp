@@ -1,8 +1,8 @@
 import streamlit as st
-import yaml
-from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
 from streamlit_authenticator import Authenticate
+import yaml
+from yaml.loader import SafeLoader
 from background import set_bg_hack
 
 with open("crendentials.yaml") as file:
