@@ -1,9 +1,12 @@
 import streamlit as st
-import streamlit_authenticator as stauth
 from streamlit_authenticator import Authenticate
 import yaml
 from yaml.loader import SafeLoader
 from background import set_bg_hack
+
+NB_CADENAS = 3
+
+
 
 with open("projects/noel_candice/frontend/crendentials.yaml") as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -24,9 +27,13 @@ except Exception as e:
 
 
 if st.session_state["authentication_status"]:
-    authenticator.logout()
-    st.write(f'Welcome *{st.session_state["name"]}*')
-    st.title('Some content')
+    authenticator.logout(location="sidebar")
+    for cadenas_nb in range(NB_CADENAS):
+        cadenas_name = f"cadenas_{cadenas_nb}_unlock"
+        st.session_state[cadenas_name] = config["credentials"]["usernames"][st.session_state["username"]][cadenas_name]    
+    
+    if st.button(label="Prete pour l'aventure?",key="start"):
+        st.switch_page("pages/main_page.py")
 elif st.session_state['authentication_status'] is False:
     st.error('Username/password is incorrect')
 elif st.session_state['authentication_status'] is None:

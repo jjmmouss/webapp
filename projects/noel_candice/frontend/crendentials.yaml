@@ -3,11 +3,18 @@ credentials:
     candice:
       email: plop@gmail.com
       name: Candice
-      password: $2b$12$T89y7yfBdvdNxqcvFnpfP.nsNgWUjtyDcrX1KDx1M5bfha/uV7G6u #Joyeux Noel
+      password: $2b$12$T89y7yfBdvdNxqcvFnpfP.nsNgWUjtyDcrX1KDx1M5bfha/uV7G6u #Joyeux 
+      cadenas_0_unlock: False
+      cadenas_1_unlock: False
+      cadenas_2_unlock: False
     joachim:
       email: plopplop@gmail.com
       name: Joachim
       password: $2b$12$kXkHRuuL.09kFaWLZFgo/Oh/QW9fuLJfvwID.4/o4LiE9tRPm9oKy # TheGameMaster
+      cadenas_0_unlock: False
+      cadenas_1_unlock: False
+      cadenas_2_unlock: False
+      
 cookie:
   expiry_days: 30
   key: JeTaimeCopine # Must be string
