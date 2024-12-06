@@ -5,7 +5,7 @@ import yaml
 from yaml.loader import SafeLoader
 from background import set_bg_hack
 
-with open("crendentials.yaml") as file:
+with open("projects/noel_candice/crendentials.yaml") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 authenticator = Authenticate(
@@ -15,7 +15,7 @@ authenticator = Authenticate(
     config["cookie"]["expiry_days"],
 )
 
-set_bg_hack("background/noel_blanc.jpg")
+set_bg_hack("projects/noel_candice/background/noel_blanc.jpg")
 st.write("Pour un Joyeux Noel")
 try:
     authenticator.login()
