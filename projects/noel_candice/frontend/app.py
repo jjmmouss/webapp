@@ -32,8 +32,9 @@ if st.session_state["authentication_status"]:
         cadenas_name = f"cadenas_{cadenas_nb}_unlock"
         st.session_state[cadenas_name] = config["credentials"]["usernames"][st.session_state["username"]][cadenas_name]    
     
-    if st.button(label="Prete pour l'aventure?",key="start"):
+    if st.button(label="Prete pour l'aventure ?",key="start"):
         st.switch_page("pages/main_page.py")
+
 elif st.session_state['authentication_status'] is False:
     st.error('Username/password is incorrect')
 elif st.session_state['authentication_status'] is None:
