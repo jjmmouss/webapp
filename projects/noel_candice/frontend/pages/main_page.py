@@ -19,7 +19,7 @@ if st.session_state["authentication_status"]:
         with col:
             if not st.session_state[f"cadenas_{cadenas_id}_unlock"]:
                 if st.button(f"cadenas_{cadenas_id+1}"):
-                    st.switch_page(f"pages/enigme_{cadenas_id+1}")
+                    st.switch_page(f"pages/enigme_{cadenas_id+1}.py")
             else:
                 st.write(f"Cadenas {cadenas_id+1} unlocked")
     if all([st.session_state[f"cadenas_{cadenas_id}_unlock"] for cadenas_id in range(NB_CADENAS)]):
