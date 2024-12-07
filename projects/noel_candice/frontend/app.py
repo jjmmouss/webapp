@@ -3,8 +3,8 @@ from streamlit_authenticator import Authenticate
 import yaml
 from yaml.loader import SafeLoader
 from background import set_bg_hack
+from cadenas_utils import CADENAS_NAMES
 
-NB_CADENAS = 3
 
 
 
@@ -28,8 +28,7 @@ except Exception as e:
 
 if st.session_state["authentication_status"]:
     authenticator.logout(location="sidebar")
-    for cadenas_nb in range(NB_CADENAS):
-        cadenas_name = f"cadenas_{cadenas_nb}_unlock"
+    for cadenas_name in CADENAS_NAMES:
         st.session_state[cadenas_name] = config["credentials"]["usernames"][st.session_state["username"]][cadenas_name]    
     
     if st.button(label="Prete pour l'aventure ?",key="start"):

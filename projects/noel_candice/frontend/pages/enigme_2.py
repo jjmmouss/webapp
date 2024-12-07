@@ -1,6 +1,3 @@
-import streamlit as st
-
-if st.session_state["authentication_status"]:
-    st.write("Bienvenue dans la deuxième enigme")
-else:
-    st.switch_page("app.py")
+from enigme_page_generation import generate_page
+ENIGME_ID = 1
+generate_page(enigme_id=ENIGME_ID)
