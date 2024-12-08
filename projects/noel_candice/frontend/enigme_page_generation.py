@@ -24,6 +24,7 @@ def generate_page(enigme_id:int,enigme_instruction:str|None=None):
                 st.error("Mauvaise réponse! Essaye encore ;)")
         if st.session_state[cadenas_name]:
             st.write("BRAVO!")
+            st.image(f"projects/noel_candice/frontend/images/reward_{enigme_id+1}.png")
             if st.button("Return to main page"):
                 st.switch_page("pages/main_page.py")
     else:

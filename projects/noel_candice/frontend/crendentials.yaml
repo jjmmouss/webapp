@@ -12,9 +12,9 @@ credentials:
       name: Candice
       password: $2b$12$T89y7yfBdvdNxqcvFnpfP.nsNgWUjtyDcrX1KDx1M5bfha/uV7G6u
     joachim:
-      cadenas_0_unlock: false
-      cadenas_1_unlock: false
-      cadenas_2_unlock: false
+      cadenas_0_unlock: true
+      cadenas_1_unlock: true
+      cadenas_2_unlock: true
       email: plopplop@gmail.com
       name: Joachim
       password: $2b$12$kXkHRuuL.09kFaWLZFgo/Oh/QW9fuLJfvwID.4/o4LiE9tRPm9oKy
