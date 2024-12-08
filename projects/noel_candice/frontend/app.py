@@ -18,7 +18,7 @@ authenticator = Authenticate(
     config["cookie"]["expiry_days"],
 )
 
-set_bg_hack("projects/noel_candice/frontend/background/noel_blanc.jpg")
+set_bg_hack("projects/noel_candice/frontend/images/background_noel_blanc.jpg")
 st.write("Pour un Joyeux Noel")
 try:
     authenticator.login()

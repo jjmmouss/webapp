@@ -1,18 +1,23 @@
 import streamlit as st
 from cadenas_utils import get_cadenas_name_for_enigme,get_answer_for_enigme,save_lock_status
-# TODO: Add return button to main_page
-# TODO: Add saving credentials when solved
+
 # TODO: Add gift when solved
 
-def generate_page(enigme_id:int):
+
+
+def generate_page(enigme_id:int,enigme_instruction:str|None=None):
     cadenas_name = get_cadenas_name_for_enigme(enigme_id=enigme_id)
     correct_answer = get_answer_for_enigme(enigme_id=enigme_id)
     if st.session_state["authentication_status"]:
         st.write(f"Bienvenue dans l'enigme numéro {enigme_id+1}")
         
+        st.image(f"projects/noel_candice/frontend/images/enigme_{enigme_id+1}.png")
+
+        if enigme_instruction:
+            st.markdown(enigme_instruction)
         user_answer = st.text_input("Ta réponse")
         if st.button("submit"):
-            if user_answer==correct_answer:
+            if user_answer.lower()==correct_answer:
                 st.session_state[cadenas_name]=True
                 save_lock_status()
             else:

@@ -22,5 +22,19 @@
 #     st.switch_page("app.py")
 from enigme_page_generation import generate_page
 ENIGME_ID = 0
-generate_page(enigme_id=ENIGME_ID)
+
+instruction = """
+### Consigne
+
+**Un voisin est une case adjacente, les diagonales ne comptent pas.**
+
+Trouve les nombres en te basant sur leur description :
+
+1. **Je n'ai que 3 voisins qui sont les suivants : 1, 1, et 7.**  
+2. **Je suis au centre de mon carré et mes voisins sont : 2, 6, 7, 9.**  
+3. **Je suis à l'intersection de la 2ᵉ colonne et de la 9ᵉ ligne**  
+   *(la case en haut à gauche correspond à la 1ʳᵉ ligne, 1ʳᵉ colonne).*  
+4. **Je suis le plus petit des quatre nombres des coins du carré central.**
+"""
+generate_page(enigme_id=ENIGME_ID,enigme_instruction=instruction)
 

@@ -22,7 +22,9 @@ if st.session_state["authentication_status"]:
     
     cadenas_state = [st.session_state[cadenas_name] for cadenas_name in CADENAS_NAMES]
     nb_unlocked_cadenas = np.sum(cadenas_state)
-    st.write(f"{NB_CADENAS-nb_unlocked_cadenas} locks")
+
+
+    st.image(f"projects/noel_candice/frontend/images/coffre_{NB_CADENAS-nb_unlocked_cadenas}_cadenas.png",caption=f"pirate chest with {NB_CADENAS-nb_unlocked_cadenas} locks")
     
     
     

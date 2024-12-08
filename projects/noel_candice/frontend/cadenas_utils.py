@@ -4,7 +4,7 @@ from yaml.loader import SafeLoader
 
 NB_CADENAS = 3
 CADENAS_NAMES = [f"cadenas_{cadenas_nb}_unlock" for cadenas_nb in range(NB_CADENAS)]
-ANSWERS = ["1234","plop","coucou"]
+ANSWERS = ["2412","noel","rudolphe"]
 
 
 
