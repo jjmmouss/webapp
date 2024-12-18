@@ -4,6 +4,13 @@ cookie:
   name: ILoveYou
 credentials:
   usernames:
+    betatesteur:
+      cadenas_0_unlock: false
+      cadenas_1_unlock: false
+      cadenas_2_unlock: false
+      email: testeur@gmail.com
+      name: betaTesteur
+      password: $2b$12$brDRfllTZa3E0lCyGcmubedaAV3b2UpGxt5NFFONskNbUEnrVvJfm
     candice:
       cadenas_0_unlock: false
       cadenas_1_unlock: false
