@@ -38,6 +38,11 @@ if st.session_state["authentication_status"]:
                 st.write(f"Cadenas {cadenas_id+1} unlocked")
     if all(cadenas_state):
         st.write("JOYEUX NOEL!!!!!!!")
+        st.image("projects/noel_candice/frontend/images/final_reward.png",caption="final reward")
+        url="https://docs.google.com/document/d/1vHcr9iC57LQTxKdF_SKQanA41I2vZeZ6spCISooCbE8/edit?usp=sharing"
+        if st.session_state["username"]=="candice":
+            st.write("Et voilà le [cadeau](%s)" % url)
+            st.write("Je t'aime")
 
 else:
     st.switch_page("app.py")

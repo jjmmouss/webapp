@@ -17,11 +17,11 @@ credentials:
       cadenas_2_unlock: false
       email: plop@gmail.com
       name: Candice
-      password: $2b$12$T89y7yfBdvdNxqcvFnpfP.nsNgWUjtyDcrX1KDx1M5bfha/uV7G6u
+      password: $2b$12$QfW8Qe2mrq2xEj9WohZ7aOXExCofUyzOzabd8VlJqhQjcfjGp59Ca
     joachim:
-      cadenas_0_unlock: true
-      cadenas_1_unlock: true
-      cadenas_2_unlock: true
+      cadenas_0_unlock: false
+      cadenas_1_unlock: false
+      cadenas_2_unlock: false
       email: plopplop@gmail.com
       name: Joachim
       password: $2b$12$kXkHRuuL.09kFaWLZFgo/Oh/QW9fuLJfvwID.4/o4LiE9tRPm9oKy
